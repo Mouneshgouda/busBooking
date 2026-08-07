@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passenger Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">🚌 BusGo</div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <!-- Left Side -->
+        <div class="hero-text">
+
+            <h1>Passenger Information</h1>
+
+            <p>
+                Please enter your personal details and select your
+                preferred seat to complete the booking process.
+                Make sure all information is correct before
+                confirming your ticket.
+            </p>
+
+        </div>
+
+        <!-- Booking Form -->
+        <div class="box">
+
+            <h1>👤 Passenger Details</h1>
+
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter your full name">
+
+            <label>Age</label>
+            <input id="age" type="number" placeholder="Enter your age">
+
+            <label>Phone</label>
+            <input id="phone" type="tel" placeholder="Enter your phone number">
+
+            <label>Select Seat</label>
+
+            <select id="seat">
+                <option>A1</option>
+                <option>A2</option>
+                <option>B1</option>
+                <option>B2</option>
+            </select>
+
+            <button onclick="confirmBooking()">
+                🎫 Book Ticket
+            </button>
+
+            <br><br>
+
+            <button onclick="location.href='bus.html'">
+                ⬅ Back to Buses
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

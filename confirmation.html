@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Confirmation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">🚌 BusGo</div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Confirmation Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>🎉 Booking Successful</h1>
+
+            <p>
+                Thank you for choosing BusGo.
+                Your ticket has been booked successfully.
+                Please keep your Booking ID safe and show this
+                ticket during boarding.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <h1>✅ Booking Confirmed</h1>
+
+            <div id="ticket"></div>
+
+            <button onclick="window.print()">
+                🖨 Print Ticket
+            </button>
+
+            <br><br>
+
+            <button onclick="location.href='index.html'">
+                🏠 Back to Home
+            </button>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        document.getElementById("ticket").innerHTML =
+
+        `
+        <h3>Booking ID : BT10245</h3>
+
+        <p><strong>Passenger Name :</strong> ${localStorage.name}</p>
+
+        <p><strong>Bus :</strong> ${localStorage.bus}</p>
+
+        <p><strong>Seat :</strong> ${localStorage.seat}</p>
+
+        <p><strong>Status :</strong>
+        <span style="color:green;font-weight:bold;">CONFIRMED</span>
+        </p>
+        `;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Available Buses</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">🚌 BusGo</div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Find Your Perfect Bus</h1>
+
+            <p>
+                Choose from our available buses with comfortable
+                seating, affordable fares, and reliable service.
+                Click <strong>Select</strong> to continue your booking.
+            </p>
+
+        </div>
+
+        <!-- Bus List -->
+        <div class="box">
+
+            <h1>🚌 Available Buses</h1>
+
+            <table>
+
+                <tr>
+                    <th>Bus</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>Green Line Travels</td>
+                    <td>AC Sleeper</td>
+                    <td>₹900</td>
+                    <td>
+                        <button onclick="chooseBus('Green Line Travels')">
+                            Select
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Royal Express</td>
+                    <td>AC Seater</td>
+                    <td>₹650</td>
+                    <td>
+                        <button onclick="chooseBus('Royal Express')">
+                            Select
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>City Travels</td>
+                    <td>Non AC</td>
+                    <td>₹450</td>
+                    <td>
+                        <button onclick="chooseBus('City Travels')">
+                            Select
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <button onclick="location.href='index.html'">
+                ⬅ Back to Search
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

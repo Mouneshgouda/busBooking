@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">🚌 BusGo</div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#booking">Book Ticket</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Travel Comfortably Across India</h1>
+
+            <p>
+                Book your bus tickets in just a few clicks.
+                Safe, affordable, and comfortable journeys with
+                premium buses and trusted operators.
+            </p>
+
+            <a href="#booking" class="hero-btn">
+                Book Now
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/bus.png" alt="Bus">
+        </div>
+
+    </section>
+
+
+
+    <!-- Booking Form (Your Existing Form) -->
+    <section id="booking">
+
+        <div class="box">
+
+            <h1>🚌 Bus Ticket Booking</h1>
+
+            <label>From</label>
+            <select id="from">
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Hyderabad</option>
+            </select>
+
+            <label>To</label>
+            <select id="to">
+                <option>Chennai</option>
+                <option>Bangalore</option>
+                <option>Mumbai</option>
+            </select>
+
+            <label>Journey Date</label>
+            <input type="date" id="date">
+
+            <button onclick="searchBus()">
+                Search Bus
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
